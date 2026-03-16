@@ -1,0 +1,69 @@
+activity1:
+speed =int(input("enter vechicle speed(km/h):"))
+
+if speed > 60:
+  print("overspeeding! you have to pay a fine")
+else:
+  print("speed is within the limit")
+
+
+
+activity 2 :
+age = int(input("enter your age"))
+
+if age >= 18:
+  print("you are allowed to watch the movie")
+else:
+  print("you are not eligible to watch the movie")
+
+
+
+activity 3 :
+
+salary = int(input("enter your monthly salary:"))
+
+if salary >= 25000:
+  print("loan approved")
+else:
+  print("loan rejected")
+
+
+
+activity 4:
+units =int(input("enter electricity units:"))
+
+if units <= 100:
+   bill = 0
+elif units <= 200:
+  bill = (units - 100) * 5
+else:
+  bill = (100 * 5) + ( units - 200) * 10
+
+print("electricity bill =$", bill)
+
+
+
+activity 5:
+
+marks = int(input("enter student marks:"))
+
+if marks >= 90:
+  print("grade A")
+elif marks >= 75:
+  print("grade B")
+elif marks >= 50:
+  print("grade C")
+else:
+  print("fail")
+
+
+
+
+
+
+
+
+
+
+
+
