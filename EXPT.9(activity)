@@ -1,0 +1,81 @@
+import datetime
+
+now = datetime.datetime.now()
+
+print("current date:",now.strftime("%y-%m-%d"))
+
+print("current time:",now.strftime("%H:%M:%S"))
+
+print("current time:",now.strftime("%A"))
+
+OUTPUT = 
+
+current date: 26-04-20
+current time: 07:48:09
+current time: Monday
+
+
+
+ACTIVITY 3 
+
+import datetime 
+
+today = datetime.date.today()
+print("today's date is:",today)
+
+OUTPUT = 
+
+today's date is: 2026-04-20
+
+
+
+ACTIVITY 5 
+
+
+import random 
+
+otp = random.randint(1000,9999)
+print("your OTP is:",otp)
+
+OUTPUT = 
+
+your OTP is: 6275
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
