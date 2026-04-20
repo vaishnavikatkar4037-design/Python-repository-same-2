@@ -1,0 +1,77 @@
+import math 
+num = float(input("enter a number for square root and power calculation:"))
+power = float(input("enter the exponent value:"))
+
+angle_deg = float(input("enter an angle in degrees for trigonometric functions:"))
+
+sqrt_value = math.sqrt(num)
+print(f"square root of {num} is {sqrt_value}")
+
+power_value = math.pow(num,power)
+print(f"{num} raised to the power {power} is {power_value}")
+
+angle_rad = math.radians(angle_deg)
+
+sin_value = math.sin(angle_rad)
+cos_value = math.cos(angle_rad)
+tan_value = math.tan(angle_rad)
+
+print(f"sin({angle_deg}) = {sin_value}")
+print(f"cos({angle_deg}) = {cos_value}")
+print(f"tan({angle_deg}) = {tan_value}")
+
+OUTPUT = 
+
+enter a number for square root and power calculation:25
+enter the exponent value:2
+enter an angle in degrees for trigonometric functions:30
+square root of 25.0 is 5.0
+25.0 raised to the power 2.0 is 625.0
+sin(30.0) = 0.49999999999999994
+cos(30.0) = 0.8660254037844387
+tan(30.0) = 0.5773502691896257
+
+
+
+
+PROG.2 
+
+import datetime
+
+now = datetime.datetime.now()
+
+print("current date:",now.strftime("%y-%m-%d"))
+
+print("current time:",now.strftime("%H:%M:%S"))
+
+print("current time:",now.strftime("%A"))
+
+
+OUTPUT = 
+
+current date: 26-04-20
+current time: 07:48:09
+current time: Monday
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
