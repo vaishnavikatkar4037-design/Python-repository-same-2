@@ -1,0 +1,8 @@
+# Define a function 'personal_details'.
+
+def personal_details():
+  name, age = "vaishnavi", 19
+  address = "rahimatpur, satara, India"
+
+  print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))
+personal_details()
