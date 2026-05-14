@@ -1,0 +1,88 @@
+Activity 1 : 
+import streamlit as st
+
+st.title("Grocery Bill Calculator")
+
+# Input items
+rice = st.number_input("Rice Price", min_value=0)
+milk = st.number_input("Milk Price", min_value=0)
+bread = st.number_input("Bread Price", min_value=0)
+
+# Total bill
+total = rice + milk + bread
+
+if st.button("Calculate Bill"):
+    st.success(f"Total Grocery Bill = ₹{total}")
+output= 
+
+    Rice Price = 100
+Milk Price = 50
+Bread Price = 40
+
+Total Grocery Bill = ₹190
+
+Activity 2 
+import streamlit as st
+
+st.title("BMI Health Checker")
+
+# User inputs
+weight = st.number_input("Enter your weight (kg)", min_value=1.0)
+height = st.number_input("Enter your height (meters)", min_value=0.1)
+
+if st.button("Check BMI"):
+    bmi = weight / (height ** 2)
+
+    st.write(f"Your BMI is: {round(bmi, 2)}")
+
+    if bmi < 18.5:
+        st.warning("You are Underweight")
+    elif bmi < 25:
+        st.success("You are Normal Weight")
+    elif bmi < 30:
+        st.warning("You are Overweight")
+    else:
+        st.error("You are Obese")
+
+        output 
+        Weight = 50 kg
+Height = 1.6 m
+
+Your BMI is: 19.53
+You are Normal Weight
+
+
+Activity 3 
+
+import streamlit as st
+
+st.title("Student Result Calculator")
+
+# Marks input
+sub1 = st.number_input("Enter marks for Subject 1", min_value=0, max_value=100)
+sub2 = st.number_input("Enter marks for Subject 2", min_value=0, max_value=100)
+sub3 = st.number_input("Enter marks for Subject 3", min_value=0, max_value=100)
+
+if st.button("Calculate Result"):
+    total = sub1 + sub2 + sub3
+    percentage = total / 3
+
+    st.write(f"Total Marks = {total}")
+    st.write(f"Percentage = {percentage:.2f}%")
+
+    if percentage >= 35:
+        st.success("Result: Pass")
+    else:
+        st.error("Result: Fail")
+
+        output 
+        Subject 1 = 80
+Subject 2 = 75
+Subject 3 = 90
+
+Total Marks = 245
+Percentage = 81.67%
+Result: Pass
+
+
+
